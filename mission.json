@@ -1,5 +1,5 @@
 {
-  "status": "awaiting_signal",
+  "status": "signal_received",
   "transmissions": {
     "awaiting_signal": {
       "title": "Launch confirmed",
