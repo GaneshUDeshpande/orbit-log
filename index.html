@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Orbit Log | Aster-01</title>
   <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
 </head>
 <body>
   <main class="page">
@@ -23,7 +24,9 @@
         <p class="intro">
           A small satellite on a mission to map Earth’s changing coastlines.
         </p>
-        <p class="badge pending"><span class="status-dot"></span> Awaiting first signal</p>
+        <p id="mission-status" class="badge pending" aria-live="polite">
+          Awaiting first signal
+        </p>
       </div>
 
       <div class="space-scene" aria-hidden="true">
@@ -37,8 +40,11 @@
     <div class="dashboard">
       <section class="panel transmission" aria-labelledby="transmission-title">
         <p class="eyebrow">Latest transmission</p>
-        <h2 id="transmission-title">first signal recieved</h2>
-        <p>Aster-01 has lifted off. The ground station is listening for its first check-in.</p>
+        <h2 id="transmission-title">Launch confirmed</h2>
+        <p id="transmission-message">
+          Aster-01 has lifted off. The ground station is listening for its first check-in.
+        </p>
+
         <div class="signal" aria-hidden="true">
           <span></span><span></span><span></span><span></span>
           <span></span><span></span><span></span>
@@ -48,9 +54,18 @@
       <section class="panel milestones" aria-labelledby="milestones-title">
         <h2 id="milestones-title">Mission milestones</h2>
         <ol>
-          <li><span>Launch</span><span class="badge complete">Complete</span></li>
-          <li><span>First signal</span><span class="badge pending">Awaiting</span></li>
-          <li><span>Coastline imaging</span><span class="badge planned">Planned</span></li>
+          <li>
+            <span>Launch</span>
+            <span class="badge complete">Complete</span>
+          </li>
+          <li>
+            <span>First signal</span>
+            <span id="signal-milestone" class="badge pending">Awaiting</span>
+          </li>
+          <li>
+            <span>Coastline imaging</span>
+            <span class="badge planned">Planned</span>
+          </li>
         </ol>
       </section>
     </div>
@@ -64,6 +79,5 @@
       </dl>
     </footer>
   </main>
-  <script src="app.js" defer></script>
 </body>
 </html>
