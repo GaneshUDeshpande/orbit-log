@@ -1,2 +1,2 @@
 FROM nginx:alpine
-COPY index.html style.css /usr/share/nginx/html/
+COPY index.html style.css app.js mission.json /usr/share/nginx/html/
