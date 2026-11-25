@@ -1,0 +1,13 @@
+{
+  "status": "awaiting_signal",
+  "transmissions": {
+    "awaiting_signal": {
+      "title": "Launch confirmed",
+      "message": "Aster-01 has lifted off. The ground station is listening for its first check-in."
+    },
+    "signal_received": {
+      "title": "First signal received",
+      "message": "The ground station received Aster-01’s first transmission."
+    }
+  }
+}
