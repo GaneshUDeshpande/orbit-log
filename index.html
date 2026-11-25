@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Orbit Log | Aster-01</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="topbar">
+      <a class="brand" href="./">
+        <span class="brand-icon" aria-hidden="true">✦</span>
+        Orbit Log
+      </a>
+      <span class="site-label">Fictional mission dashboard</span>
+    </header>
+
+    <section class="hero" aria-labelledby="mission-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Earth observation mission</p>
+        <h1 id="mission-title">Aster<span>-01</span></h1>
+        <p class="intro">
+          A small satellite on a mission to map Earth’s changing coastlines.
+        </p>
+        <p class="badge pending"><span class="status-dot"></span> Awaiting first signal</p>
+      </div>
+
+      <div class="space-scene" aria-hidden="true">
+        <div class="planet"></div>
+        <div class="orbit">
+          <div class="satellite"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="dashboard">
+      <section class="panel transmission" aria-labelledby="transmission-title">
+        <p class="eyebrow">Latest transmission</p>
+        <h2 id="transmission-title">Launch confirmed</h2>
+        <p>Aster-01 has lifted off. The ground station is listening for its first check-in.</p>
+        <div class="signal" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span>
+        </div>
+      </section>
+
+      <section class="panel milestones" aria-labelledby="milestones-title">
+        <h2 id="milestones-title">Mission milestones</h2>
+        <ol>
+          <li><span>Launch</span><span class="badge complete">Complete</span></li>
+          <li><span>First signal</span><span class="badge pending">Awaiting</span></li>
+          <li><span>Coastline imaging</span><span class="badge planned">Planned</span></li>
+        </ol>
+      </section>
+    </div>
+
+    <footer class="release">
+      <h2>Website release</h2>
+      <dl>
+        <div><dt>Jenkins build</dt><dd>#__BUILD_NUMBER__</dd></div>
+        <div><dt>Git commit</dt><dd>__GIT_SHA__</dd></div>
+        <div><dt>Built at (UTC)</dt><dd>__BUILD_TIME_UTC__</dd></div>
+      </dl>
+    </footer>
+  </main>
+</body>
+</html>
